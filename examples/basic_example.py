@@ -14,5 +14,5 @@ copula_model = EllipticalCopula(data)
 copula_model.fit()
 
 #%%
-samples_ = copula_model.sample(10000)
+samples_ = copula_model.sample(500)
 covariance_samples = np.corrcoef(samples_)

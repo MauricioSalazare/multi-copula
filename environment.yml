@@ -1,9 +1,9 @@
-name: copula_env
+name: multicopula
 channels:
   - conda-forge
   - defaults
 dependencies:
-  - python>=3.7
+  - python>=3.0
   - matplotlib
   - numpy
   - pandas
@@ -12,3 +12,4 @@ dependencies:
   - seaborn
   - statsmodels
   - tqdm
+  - pip
