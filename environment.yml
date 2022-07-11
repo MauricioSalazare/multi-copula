@@ -1,0 +1,14 @@
+name: copula_env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python>=3.7
+  - matplotlib
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - seaborn
+  - statsmodels
+  - tqdm

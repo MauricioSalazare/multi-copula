@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "multicopula"
+version = "0.0.1"
+urls = {repository = "https://github.com/MauricioSalazare/multicopula"}
+authors = [{author = "Mauricio Salazar", email = "e.m.salazar.duque@tue.nl"},]
+description = "Multivariate probability distributions using copula theory."
+readme = "README.rst"
+keywords = ["uncertainty modelling", "copula", "multivariate probability", "time series", "load profiles",
+            "synthetic electrical loads"]
+license = {text = "MIT"}
+classifiers = ["Programming Language :: Python :: 3",
+               "License :: OSI Approved :: MIT License",
+               "Operating System :: OS Independent",]
+dependencies = ["numpy",
+                "pandas",
+                "matplotlib",
+                "scipy",
+                "tqdm",
+                "scikit-learn",
+                "statsmodels",
+                "seaborn"]
+requires-python = ">=3.0"
+
+[project.optional-dependencies]
+dev = ["build", "twine", "jupyterlab"]
+test = ["pytest"]
+doc = ["sphinx"]
+
+[tool.setuptools.packages.find]
+where = ["."]  # list of folders that contain the packages (["."] by default)
+include = ["multicopula*"]  # Look only one folder in the root
+namespaces = true
