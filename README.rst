@@ -1,5 +1,5 @@
 .. image:: https://mybinder.org/badge_logo.svg
-   :target: https://mybinder.org/v2/gh/MauricioSalazare/multicopula/master?urlpath=lab/tree/examples
+   :target: https://mybinder.org/v2/gh/MauricioSalazare/multi-copula/master?urlpath=lab/tree/examples
    :alt: binder
 
 
