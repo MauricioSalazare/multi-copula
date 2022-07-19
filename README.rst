@@ -48,11 +48,7 @@ Run the load base case as:
 
 
 The package focuses in the simulation of daily electrical consumption profiles for low voltage and medium
-voltage networks. Example of generated profiles conditioned to a yearly energy consumption:
-
-.. figure:: https://github.com/MauricioSalazare/multi-copula/tree/master/examples/images/writer_test_profiles.gif
-
-
+voltage networks. Example of generated profiles conditioned to a yearly energy consumption (`link  <https://github.com/MauricioSalazare/multi-copula/tree/master/examples/images/writer_test_profiles.gif>`_)
 
 More examples can be found in the `examples  <https://https://github.com/MauricioSalazare/multi-copula/tree/master/examples>`_ folder (under development).
 
