@@ -46,11 +46,21 @@ Run the load base case as:
    samples_ = copula_model.sample(10000)
    covariance_samples = np.corrcoef(samples_)
 
-More examples can be found in the examples folder (under development).
+
+The package focuses in the simulation of daily electrical consumption profiles for low voltage and medium
+voltage networks. Example of generated profiles conditioned to a yearly energy consumption:
+
+.. only:: html
+
+   .. figure:: https://github.com/MauricioSalazare/multi-copula/tree/master/examples/images/writer_test_profiles.gif
+
+
+
+More examples can be found in the `examples  <https://https://github.com/MauricioSalazare/multi-copula/tree/master/examples>`_ folder (under development).
 
 Reading and citations:
 ----------------------
-The mathematical formulation of the power flow can be found at:
+The mathematical formulation of the generative model with the copula can be found at:
 
 "Conditional Multivariate Elliptical Copulas to Model Residential Load Profiles From Smart Meter Data,"
 E.M. (Mauricio) Salazar Duque, P.P. Vergara, P.H. Nguyen, A. van der Molen and J. G. Slootweg,
