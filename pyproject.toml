@@ -7,7 +7,7 @@ name = "multicopula"
 version = "0.0.2"
 urls = {repository = "https://github.com/MauricioSalazare/multi-copula"}
 authors = [{author = "Mauricio Salazar", email = "e.m.salazar.duque@tue.nl"},]
-description = "Multivariate probability distributions using copula theory."
+description = "Multivariate copulas for uncertainty modelling in power systems."
 readme = "README.rst"
 keywords = ["uncertainty modelling", "copula", "multivariate probability", "time series", "load profiles",
             "synthetic electrical loads"]
