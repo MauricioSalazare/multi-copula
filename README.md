@@ -55,8 +55,8 @@ samples_cond2 = copula_model.sample(500, conditional=True, variables={'x2': 2.8,
 The package focuses in the simulation of daily electrical consumption profiles for low voltage and medium
 voltage networks. Example of generated profiles conditioned to a yearly energy [consumption](https://github.com/MauricioSalazare/multi-copula/tree/master/examples/images/writer_test_profiles.gif).
 
-<p style="text-align:center">
-<img src="https://github.com/MauricioSalazare/multi-copula/blob/master/examples/images/writer_test_profiles.gif?raw=true" width="400" height="400" />
+<p align="center">
+<img src="https://github.com/MauricioSalazare/multi-copula/blob/master/examples/images/writer_test_profiles.gif?raw=true" width="600" height="600" />
 </p>
 
 More examples can be found in the [examples](examples) folder (under development).
