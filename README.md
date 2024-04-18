@@ -34,7 +34,7 @@ covariance_ = np.array([[   1, -0.6,  0.7],
 mean_ = np.array([1, 3, 4])
 data = np.random.multivariate_normal(mean_, covariance_, 5000).T
 
-#%% Fit the copula model (rows are variables and columns are data samples (instances) of the variables)
+#%% Fit the copula model (rows are variables and columns are data samples for each one of the variables)
 copula_model = EllipticalCopula(data)
 copula_model.fit()
 
@@ -42,10 +42,10 @@ copula_model.fit()
 samples_ = copula_model.sample(500)
 covariance_samples = np.corrcoef(samples_)
 
-#%% Condition the model in the third dimension
+#%% Sampling the copula model conditioning the third dimension
 samples_cond1 = copula_model.sample(500, conditional=True, variables={'x3': 3.4})
 
-#%% Condition the model in the second and third dimension
+#%% Sampling the copula model conditioning second and third dimension
 samples_cond2 = copula_model.sample(500, conditional=True, variables={'x2': 2.8, 'x3': 3.4})
 
 ```
