@@ -63,7 +63,7 @@ The idea is to generate consistent daily profiles depending on the increase in a
 words, to create profiles conditioned to the variable $`w`$ to a specific value of annual energy consumption
 $`\hat{w}`$. That means a conditioned copula model of the form $`f(x_1, \ldots, x_{96}| w=\hat{w})`$.
 The following simulation is an example of generated profiles conditioned to different annual energy consumption values.
-The annual values are highlighted with a $`\color{cyan}{\textsf{lorem ipsum}}`$ line in the subplot colorbar. 
+The annual values are highlighted with a $`\color{cyan}{\text{cyan}}`$ line in the subplot colorbar. 
 The three rows of subplots show different types of electricity consumption.
 
 <p align="center">
