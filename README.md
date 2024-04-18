@@ -19,7 +19,7 @@ The package can be installed via pip using:
 
 ## Example:
 
-Run the load base case as:
+Run a basic example as:
 
 ```python
 from multicopula import EllipticalCopula
@@ -51,12 +51,20 @@ samples_cond2 = copula_model.sample(500, conditional=True, variables={'x2': 2.8,
 ```
 
 ## Electricity consumption application   
-The package can be used to simulate daily electrical consumption profiles for low voltage and medium
-voltage networks. 
+The package can be used to simulate daily electrical consumption profiles (active and reactive power) for 
+low voltage and medium voltage networks. 
 
-The daily load profile is a modelled with a copula where each time step is one stochastic variable. i.e., $`\sqrt{3x-1}+(1+x)^2`$
+In this application, the daily load profile (15-minute resolution) is modeled with a copula where each time step 
+is a stochastic variable. i.e., $`x_1, \ldots, x_{96}`$. Additionally, the model has an extra variable representing
+the annual energy consumption ($`w`$) in GWh. Therefore, the copula model represents a probability distribution of 
+the form $`f(x_1, \ldots, x_{96}, w)`$.
 
-Example of generated profiles conditioned to a yearly energy [consumption](https://github.com/MauricioSalazare/multi-copula/tree/master/examples/images/writer_test_profiles.gif).
+The idea is to generate consistent daily profiles depending on the increase in annual energy consumption. In other
+words, to create profiles conditioned to the variable $`w`$ to a specific value of annual energy consumption
+$`\hat{w}`$. That means a conditioned copula model of the form $`f(x_1, \ldots, x_{96}| w=\hat{w})`$.
+The following simulation is an example of generated profiles conditioned to different annual energy consumption values.
+The annual values are highlighted with a <span style="color:cyan">*cyan*</span> line in the subplot colorbar. 
+The three rows of subplots show different types of electricity consumption.
 
 <p align="center">
 <img src="https://github.com/MauricioSalazare/multi-copula/blob/master/examples/images/writer_test_profiles.gif?raw=true" width="600" height="700" />
