@@ -1,7 +1,11 @@
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/MauricioSalazare/multi-copula/master?urlpath=lab/tree/examples)
+[![MIT License](https://img.shields.io/badge/License-MIT-yellow)](https://github.com/MauricioSalazare/multi-copula/blob/master/LICENSE)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/multicopula)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/multicopula)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/MauricioSalazare/multi-copula)
+![PyPI - Version](https://img.shields.io/pypi/v/multicopula)
 
 # MultiCopula
-
 ## What is MultiCopula?
  
 It is a multivariate probabilistic modelling package, which uses copula theory.
@@ -49,7 +53,11 @@ samples_cond2 = copula_model.sample(500, conditional=True, variables={'x2': 2.8,
 ```
    
 The package focuses in the simulation of daily electrical consumption profiles for low voltage and medium
-voltage networks. Example of generated profiles conditioned to a yearly energy consumption [link](https://github.com/MauricioSalazare/multi-copula/tree/master/examples/images/writer_test_profiles.gif)
+voltage networks. Example of generated profiles conditioned to a yearly energy [consumption](https://github.com/MauricioSalazare/multi-copula/tree/master/examples/images/writer_test_profiles.gif).
+
+<p style="text-align:center">
+<img src="https://github.com/MauricioSalazare/multi-copula/blob/master/examples/images/writer_test_profiles.gif?raw=true" width="400" height="400" />
+</p>
 
 More examples can be found in the [examples](examples) folder (under development).
 
