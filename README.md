@@ -32,7 +32,7 @@ covariance_ = np.array([[   1, -0.6,  0.7],
 mean_ = np.array([1, 3, 4])
 data = np.random.multivariate_normal(mean_, covariance_, 5000).T
 
-#%% Fit the copula model
+#%% Fit the copula model (rows are variables and columns are data samples (instances) of the variables)
 copula_model = EllipticalCopula(data)
 copula_model.fit()
 
