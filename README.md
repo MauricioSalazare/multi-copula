@@ -17,8 +17,6 @@ The package can be installed via pip using:
     pip install multicopula
 ```
 
-
-
 ## Example:
 
 Run the load base case as:
@@ -51,9 +49,14 @@ samples_cond1 = copula_model.sample(500, conditional=True, variables={'x3': 3.4}
 samples_cond2 = copula_model.sample(500, conditional=True, variables={'x2': 2.8, 'x3': 3.4})
 
 ```
-   
-The package focuses in the simulation of daily electrical consumption profiles for low voltage and medium
-voltage networks. Example of generated profiles conditioned to a yearly energy [consumption](https://github.com/MauricioSalazare/multi-copula/tree/master/examples/images/writer_test_profiles.gif).
+
+## Electricity consumption application   
+The package can be used to simulate daily electrical consumption profiles for low voltage and medium
+voltage networks. 
+
+The daily load profile is a modelled with a copula where each time step is one stochastic variable. i.e., $`\sqrt{3x-1}+(1+x)^2`$
+
+Example of generated profiles conditioned to a yearly energy [consumption](https://github.com/MauricioSalazare/multi-copula/tree/master/examples/images/writer_test_profiles.gif).
 
 <p align="center">
 <img src="https://github.com/MauricioSalazare/multi-copula/blob/master/examples/images/writer_test_profiles.gif?raw=true" width="600" height="700" />
