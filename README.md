@@ -56,7 +56,7 @@ low voltage and medium voltage networks.
 
 In this application, the daily load profile (15-minute resolution) is modeled with a copula where each time step 
 is a stochastic variable. i.e., $`x_1, \ldots, x_{96}`$. Additionally, the model has an extra variable representing
-the annual energy consumption ($`w`$) in GWh. Therefore, the copula model represents a probability distribution of 
+the annual energy consumption ($`w`$) in GWh/year units. Therefore, the copula model represents a probability distribution of 
 the form $`f(x_1, \ldots, x_{96}, w)`$.
 
 The idea is to generate consistent daily profiles depending on the increase in annual energy consumption. In other
@@ -64,7 +64,7 @@ words, to create profiles conditioned to the variable $`w`$ to a specific value 
 $`\hat{w}`$. That means a conditioned copula model of the form $`f(x_1, \ldots, x_{96}| w=\hat{w})`$.
 The following simulation is an example of generated profiles conditioned to different annual energy consumption values.
 The annual values are highlighted with a $`\color{cyan}{\text{cyan}}`$ line in the subplot colorbar. 
-The three rows of subplots show different types of electricity consumption.
+The three rows of subplots show different types (clusters) of electricity consumption.
 
 <p align="center">
 <img src="https://github.com/MauricioSalazare/multi-copula/blob/master/examples/images/writer_test_profiles.gif?raw=true" width="600" height="700" />
