@@ -1,9 +1,9 @@
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/MauricioSalazare/multi-copula/master?urlpath=lab/tree/examples)
 [![MIT License](https://img.shields.io/badge/License-MIT-yellow)](https://github.com/MauricioSalazare/multi-copula/blob/master/LICENSE)
-![PyPI - Python Version](https://img.shields.io/pypi/pyversions/multicopula)
-![PyPI - Downloads](https://img.shields.io/pypi/dm/multicopula)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/MauricioSalazare/multi-copula)
-![PyPI - Version](https://img.shields.io/pypi/v/multicopula)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/multicopula)](https://pypi.python.org/pypi/multicopula/)
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/multicopula)](https://pypi.python.org/pypi/multicopula/)
+[![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/MauricioSalazare/multi-copula)]((https://github.com/MauricioSalazare/tensorpowerflow))
+[![PyPI - Version](https://img.shields.io/pypi/v/multicopula)](https://pypi.python.org/pypi/multicopula/)
 
 # MultiCopula
 ## What is MultiCopula?
