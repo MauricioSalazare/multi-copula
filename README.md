@@ -56,7 +56,7 @@ The package focuses in the simulation of daily electrical consumption profiles f
 voltage networks. Example of generated profiles conditioned to a yearly energy [consumption](https://github.com/MauricioSalazare/multi-copula/tree/master/examples/images/writer_test_profiles.gif).
 
 <p align="center">
-<img src="https://github.com/MauricioSalazare/multi-copula/blob/master/examples/images/writer_test_profiles.gif?raw=true" width="600" height="600" />
+<img src="https://github.com/MauricioSalazare/multi-copula/blob/master/examples/images/writer_test_profiles.gif?raw=true" width="600" height="700" />
 </p>
 
 More examples can be found in the [examples](examples) folder (under development).
