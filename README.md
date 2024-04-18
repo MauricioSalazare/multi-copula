@@ -22,9 +22,7 @@ Run the load base case as:
 ```python
 from multicopula import EllipticalCopula
 import numpy as np
-import matplotlib
-import matplotlib.pyplot as plt
-matplotlib.use('TKAgg')
+
 
 #%% Generate random data from a multivariate gaussian of 3-dimensions
 n_samples_ = 5000
